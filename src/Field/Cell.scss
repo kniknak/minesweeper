@@ -1,0 +1,80 @@
+.cell {
+  height: 30px;
+  background-color: #BDBDBD;
+  border: 2px solid #fff;
+  border-bottom-color: #7B7B7B;
+  border-right-color: #7B7B7B;
+  cursor: pointer;
+  user-select: none;
+
+  &Revealed {
+    cursor: default;
+    border: 1px solid transparent;
+    border-bottom-color: #7B7B7B;
+    border-right-color: #7B7B7B;
+  }
+
+  &Thrown {
+    background-color: #EB3223;
+  }
+
+  &Flagged {
+    background-color: #0023F5;
+  }
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  position: relative;
+
+  &Hidden {
+    opacity: 0.3;
+  }
+
+  &Mine {
+    &::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+
+  &Mines1 {
+    color: #0023F5;
+  }
+
+  &Mines2 {
+    color: #357820;
+  }
+
+  &Mines3 {
+    color: #EB3223;
+  }
+
+  &Mines4 {
+    color: #000B76;
+  }
+
+  &Mines5 {
+    color: #71130B;
+  }
+
+  &Mines6 {
+    color: #34797A;
+  }
+
+  &Mines7 {
+    color: #000;
+  }
+
+  &Mines8 {
+    color: #7B7B7B;
+  }
+}
